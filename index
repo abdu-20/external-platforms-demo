@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page - Judge.me Widgets Demo</title>
+    
+    <!-- Judge.me Script - REPLACE WITH YOUR ACTUAL SCRIPT FROM JUDGE.ME SETTINGS -->
+    <!-- Go to Judge.me Admin > Settings > Advanced > Platform-independent Review Widget -->
+    <!-- Copy your unique script and paste it here -->
+    <script>
+jdgm = window.jdgm || {};jdgm.SHOP_DOMAIN = 'judgemetest.myshopify.com';jdgm.PLATFORM = 'shopify';jdgm.PUBLIC_TOKEN = 'QGG1byjj8m2gb1XZPlVBkrFLRU4';</script><script data-cfasync='false' type='text/javascript' async src='https://cdnwidget.judge.me/widget_preloader.js'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            font-size: 24px;
+            color: #2c3e50;
+        }
+        
+        .product-section {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .product-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .product-image {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 400px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+        }
+        
+        .product-info h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .price {
+            font-size: 28px;
+            color: #27ae60;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        
+        .product-description {
+            color: #555;
+            margin: 20px 0;
+            line-height: 1.8;
+        }
+        
+        .add-to-cart {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        
+        .add-to-cart:hover {
+            background: #2980b9;
+        }
+        
+        .widget-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .widget-label {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .setup-notice {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        
+        .setup-notice h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .setup-notice ol {
+            margin-left: 20px;
+            color: #856404;
+        }
+        
+        .setup-notice li {
+            margin: 8px 0;
+        }
+        
+        .setup-notice code {
+            background: #fff;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        
+        @media (max-width: 768px) {
+            .product-header {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🛍️ Judge.me Widgets Demo Store</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="setup-notice">
+            <h3>⚙️ Setup Instructions</h3>
+            <ol>
+                <li>Go to your Judge.me admin: <strong>Settings → Advanced</strong></li>
+                <li>Find <strong>Platform-independent Review Widget</strong></li>
+                <li>Click <strong>Enable platform-independent widgets</strong></li>
+                <li>Copy the provided script and replace the placeholder script in the <code>&lt;head&gt;</code> section</li>
+                <li>Update the <code>data-id</code> attributes with your actual product ID (e.g., <code>data-id="your-product-123"</code>)</li>
+                <li>Update <code>data-product-title</code> with your product name</li>
+            </ol>
+        </div>
+        
+        <div class="product-section">
+            <div class="product-header">
+                <div class="product-image">
+                    📦
+                </div>
+                <div class="product-info">
+                    <h2>Premium Wireless Headphones</h2>
+                    
+                    <!-- WIDGET 1: Star Ratings -->
+                    <div class="widget-section">
+                        <div class="widget-label">⭐ Star Ratings Widget</div>
+                        <div class="jdgm-widget jdgm-preview-badge" data-id="5370113228952"></div>
+                    </div>
+                    
+                    <div class="price">$199.99</div>
+                    
+                    <div class="product-description">
+                        Experience premium sound quality with our flagship wireless headphones. 
+                        Featuring active noise cancellation, 30-hour battery life, and premium 
+                        comfort for all-day listening.
+                    </div>
+                    
+                    <!-- WIDGET 6: Verified Reviews Counter -->
+                    <div class="widget-section">
+                        <div class="widget-label">✓ Verified Reviews Counter</div>
+                        <div class="jdgm-verified-badge-wrapper"></div>
+                    </div>
+                    
+                    <!-- WIDGET 7: All Reviews Counter -->
+                    <div class="widget-section">
+                        <div class="widget-label">📊 All Reviews Counter</div>
+                        <div class="jdgm-all-reviews-text"></div>
+                    </div>
+                    
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- WIDGET 8: Judge.me Medals Widget -->
+            <div class="widget-section">
+                <div class="widget-label">🏅 Judge.me Medals Widget</div>
+                <div class="jdgm-medals-wrapper"></div>
+            </div>
+            
+            <!-- WIDGET 3: Reviews Carousel -->
+            <div class="widget-section">
+                <div class="widget-label">🎠 Reviews Carousel</div>
+                <div class="jdgm-carousel-wrapper">
+                    <h2 class="jdgm-carousel-title">Featured reviews</h2>
+                    <a href="/reviews" class="jdgm-all-reviews-rating-wrapper">
+                        <div data-score="" class="jdgm-all-reviews-rating"></div>
+                        from <span class="jdgm-all-reviews-count"></span> reviews
+                    </a>
+                </div>
+            </div>
+            
+            <!-- WIDGET 2: Review Widget -->
+            <div class="widget-section">
+                <div class="widget-label">💬 Review Widget (Full Reviews Display)</div>
+                <div class="jdgm-widget jdgm-review-widget jdgm-outside-widget" 
+                     data-id="5370113228952" 
+                     data-product-title="Premium Wireless Headphones"></div>
+            </div>
+            
+            <!-- WIDGET 5: All Reviews Widget -->
+           <!-- <div class="widget-section">
+                <div class="widget-label">📝 All Reviews Widget</div>
+                <div class="jdgm-widget jdgm-all-reviews-widget">
+                    <div class="jdgm-all-reviews__body"></div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    
+    <!-- WIDGET 4: Floating Reviews Tab (appears on side of page) -->
+    <section class="jdgm-widget jdgm-revs-tab">
+        <div class="jdgm-revs-tab-btn btn" position="bottom">Reviews</div>
+        <div class="jdgm-revs-tab__header">
+            <a class="jdgm-close-ico"></a>
+            <h3 class="jdgm-revs-tab__title">Product Reviews</h3>
+            <a href="/pages/reviews">
+                <div class="jdgm-all-reviews-rating"></div>
+                <span class="jdgm-all-reviews-count"></span> reviews
+            </a>
+        </div>
+    </section>
+    
+    <footer style="text-align: center; padding: 40px 20px; color: #666;">
+        <p>Judge.me Widgets Integration Demo | All widgets included for testing</p>
+    </footer>
+</body>
+</html>
